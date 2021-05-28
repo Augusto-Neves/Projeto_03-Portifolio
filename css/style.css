@@ -1,46 +1,51 @@
-:root{
+:root {
     --purple: #952aed;
     --white: #ffffff;
+    --purple-darker: #472562;
+    --btn-color: #ff703d;
+    --btn-hover: #ff4c0b;
 }
+
 /* Reset CSS */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    list-style: none;
 }
 
-html, body{
+html,
+body {
     height: 100%;
 }
 
-.clear{ 
+.clear {
     clear: both;
 }
 
-.container{
+.container {
     margin: 0 auto;
     max-width: 1024px;
 }
 
-header{
+header {
     width: 100%;
     height: 90vh;
     max-height: 700px;
+    padding: 40px 2%;
     background-size: cover;
     background-position: center;
     background: linear-gradient(to right, #000000a9, #000000bb), url(../img/bg.png);
 }
 
-header .logo{
+header .logo {
     padding: 10px;
     float: left;
 }
 
-header .logo h1{
+header .logo h1 {
     font-style: italic;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--white);
     text-transform: uppercase;
     letter-spacing: -3px;
@@ -48,46 +53,189 @@ header .logo h1{
     transition: 0.6s;
 }
 
-header .logo h1:hover{
+header .logo h1:hover {
     color: var(--purple);
 }
 
-header nav {
+nav.mobile-menu {
+    display: none;
+}
+
+header nav.desktop-menu {
     float: right;
 }
 
-header nav li {
+header nav.desktop-menu li {
     display: inline-block;
     padding: 20px;
-    
+
 }
 
-header nav ul a{
+header nav.desktop-menu li a {
     padding: 10px;
     color: var(--white);
     text-decoration: none;
     transition: .6s;
 }
 
-header nav ul a:hover{
+header nav.desktop-menu ul a:hover {
     text-decoration: underline;
     color: var(--purple);
 }
 
-.chamada1{
+.chamada1 {
     color: var(--white);
     max-width: 600px;
     float: right;
     margin: 130px 25px;
 }
 
-.chamada1 h2{    
-    font-size: 25px;
-    font-weight: 400;
+.chamada1 h2 {
+    font-size: 40px;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
-.chamada1 p{
+.chamada1 p {
+    font-weight: 400;
     font-size: 16px;
     margin-top: 15px;
+}
+
+section.secao-1 {
+    width: 100%;
+    padding: 0 2%;
+    background-color: var(--purple-darker);
+    height: 400px;
+}
+
+.texto-secao-1 {
+    position: relative;
+    left: 55px;
+    width: 50%;
+    float: left;
+    color: var(--white);
+    margin-top: 60px;
+    padding-left: 80px;
+}
+
+.texto-secao-1 h2 {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.texto-secao-1 p {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.texto-secao-1 ul {
+    font-size: 1rem;
+    list-style: circle;
+    list-style-position: inside;
+}
+
+.texto-secao-1 ul li {
+    float: left;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.btn-texto-1 {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    background-color: var(--btn-color);
+    width: 165px;
+    height: 44px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-texto-1:hover {
+    background-color: var(--btn-hover);
+    transform: scale(1.1);
+}
+
+.device {
+    position: relative;
+    top: -30px;
+    float: left;
+    width: 50%;
+    height: 430px;
+    background-image: url('../img/device.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+@media screen and (max-width: 950px){
+    nav.desktop-menu {
+        display: none;
+    }
+
+    nav.mobile-menu {
+        display: block;
+    }
+}
+/* Media Queries */
+@media screen and (max-width: 768px) {
+
+    header {
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+    }   
+
+    .chamada1 {       
+        max-width: 600px;
+        float: none;
+        margin: 130px 25px;
+    }
+
+    .chamada1 h2 {
+        font-size: 30px;
+        font-weight: 700;
+        padding: 0 10px;
+        text-transform: uppercase;
+    }
+
+    .chamada1 p {
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    section.secao-1 {
+        padding: 40px 2%;
+        height: auto;
+    }
+
+    .texto-secao-1 {
+        padding: 0;
+        display: inline-block;
+        width: 100%;
+        margin: 0 auto;
+        position: static;
+        float: none;
+        text-align: center;
+    }
+
+    .texto-secao-1 ul {
+        display: inline-block;
+        margin: 20px;
+    }
+
+    .texto-secao-1 ul li {
+        float: none;
+        text-align: left;
+
+    }
+
+    .device {
+        display: none;
+    }
 }
