@@ -1,6 +1,7 @@
 :root {
     --purple: #952aed;
     --white: #ffffff;
+    --gray: #e6e6e6;
     --purple-darker: #472562;
     --btn-color: #ff703d;
     --btn-hover: #ff4c0b;
@@ -58,7 +59,39 @@ header .logo h1:hover {
 }
 
 nav.mobile-menu {
+    cursor: pointer;
     display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/hamburguer-menu.svg);
+    background-size: 100% 100%;
+}
+
+nav.mobile-menu ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 90px;
+    background-color: var(--white);
+    color: var(--white);
+    list-style: none;
+    text-align: center;
+}
+
+nav.mobile-menu ul li {
+    border-bottom: 1px solid black;
+    padding: 8px 0;
+    transition: 0.5s;
+}
+
+nav.mobile-menu ul li:hover {
+    background-color: var(--gray);
+}
+
+nav.mobile-menu ul li a {
+    text-decoration: none;
+    color: var(--purple);
 }
 
 header nav.desktop-menu {
@@ -172,15 +205,44 @@ section.secao-1 {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-@media screen and (max-width: 950px){
+
+.secao-2{
+    padding-left: 2%;
+    padding-right: 2%;    
+    background-color: var(--white);
+    text-align: center;
+}
+
+.secao-2 .container{
+    max-width: 1000px;
+}
+
+.secao-2 h2{
+    color: var(--purple-darker);
+}
+
+.secao-2 p{
+    margin-top: 30px;
+    max-width: 600px;
+    display: inline-block;
+}
+
+.secao-2 img{
+    width: 100%;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 950px) {
     nav.desktop-menu {
         display: none;
     }
 
     nav.mobile-menu {
         display: block;
+        float: right;
     }
 }
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
 
@@ -188,9 +250,9 @@ section.secao-1 {
         width: 100%;
         height: auto;
         min-height: 90vh;
-    }   
+    }
 
-    .chamada1 {       
+    .chamada1 {
         max-width: 600px;
         float: none;
         margin: 130px 25px;
@@ -237,5 +299,9 @@ section.secao-1 {
 
     .device {
         display: none;
+    }
+
+    .secao-2{
+        padding: 40px 2%;
     }
 }
