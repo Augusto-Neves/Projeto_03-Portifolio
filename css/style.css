@@ -1,7 +1,7 @@
 :root {
     --purple: #952aed;
     --purple-light: #835fa7;
-    --purple-darker: #472562;
+    --purple-darker: #472563;
     --black: #232323;
     --white: #ffffff;
     --gray: #e6e6e6;
@@ -144,7 +144,7 @@ section.secao-1 {
     height: 400px;
 }
 
-section.secao-1 .container{
+section.secao-1 .container {
     max-width: 1024px;
     height: calc(100% + 30px);
 }
@@ -213,114 +213,115 @@ section.secao-1 .container{
     background-size: 100% 100%;
 }
 
-.secao-2{
+.secao-2 {
     padding-left: 2%;
-    padding-right: 2%;    
+    padding-right: 2%;
     background-color: var(--white);
     text-align: center;
 }
 
-.secao-2 .container{
+.secao-2 .container {
     max-width: 1000px;
 }
 
-.secao-2 h2{
+.secao-2 h2 {
     font-size: 26px;
     color: var(--purple-darker);
 }
 
-.secao-2 p{
+.secao-2 p {
     display: inline-block;
     margin-top: 30px;
     max-width: 600px;
     color: var(--purple-darker)
 }
 
-.secao-2 img{
+.secao-2 img {
     position: relative;
     top: 70px;
     width: 100%;
     margin-top: 10px;
 }
 
-.secao-3{
+.secao-3 {
     width: 100%;
 }
 
-.parte-1{
+.parte-1 {
     float: left;
     width: 50%;
-    padding:140px 0px 90px 0px;
+    padding: 140px 30px 90px 30px;
     color: var(--white);
-    background-color: var(--purple-light);    
+    background-color: var(--purple-light);
 }
 
-.wrapper-part1{
+.wrapper-part1 {
     float: right;
     max-width: 600px;
-    padding-right: 30px;
+    padding-right: 0 30px;
 }
-.parte-1 h2{
+
+.parte-1 h2 {
     font-weight: 300;
     font-style: italic;
     font-size: 26px;
 }
 
-.parte-1 p{
+.parte-1 p {
     line-height: 35px;
     margin-top: 20px;
 }
 
-.parte-2{
+.parte-2 {
     float: left;
     width: 50%;
-    padding:140px 0px 0px 0px;
+    padding: 140px 30px 0px 30px;
     background-color: var(--white);
 }
 
-.sobre{    
+.sobre {
     float: left;
     max-width: 600px;
     padding-left: 30px;
 }
 
-.autor{
+.autor {
     float: left;
     width: 100%;
 }
 
-.wrapper-autor{   
+.wrapper-autor {
     float: left;
 }
 
-.autor h2{
-    color: var(--black);    
+.autor h2 {
+    color: var(--black);
     padding-right: 20px;
     font-weight: 400;
     font-size: 26px;
 }
 
-.autor p{
+.autor p {
     font-style: italic;
     font-size: 15px;
     color: var(--black);
     font-weight: 300;
 }
 
-.autor .img-autor{
+.autor .img-autor {
     float: left;
-	width: 40px;
-	height:40px;
-	position: relative;
-	top:-4px;
-	border-radius: 20px;
-    background-color: var(--gray);   
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -4px;
+    border-radius: 20px;
+    background-color: var(--gray);
 }
 
-.texto-autor{
+.texto-autor {
     float: left;
     width: 100%;
-    margin-top: 10px    ;
+    margin-top: 10px;
 }
 
 .texto-autor p {
@@ -329,22 +330,137 @@ section.secao-1 .container{
 
 }
 
-.slider-bullets{
+.slider-bullets {
     width: 100%;
     float: left;
     margin-top: 8px;
-    padding-left: 30px;    
+    padding-left: 30px;
 }
 
-.slider-bullets span{
+.slider-bullets span {
     width: 16px;
     height: 16px;
     float: left;
     border-radius: 50%;
     margin-right: 8px;
     cursor: pointer;
-    background-color: var(--gray); 
+    background-color: var(--gray);
 }
+
+section.secao-4 {
+    background-color: var(--purple-darker);
+    padding: 100px 0;
+}
+
+.form {
+    float: left;
+    width: 50%;
+    color: var(--white);
+    padding-left: 15px;    
+}
+
+.form h2 {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.form p {
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 400px;
+    margin-top: 30px;
+}
+
+.form h3 {
+    max-width: 480px;
+    text-align: right;
+    font-size: 14px;
+    
+}
+.form form{
+    margin-top: 15px;
+}
+
+.form form input[type=text],
+input[type=email] {
+    width: 100%;
+    max-width: 480px;
+    margin-top: 10px;
+    height: 80px;
+    padding-left: 8px;
+    line-height: 58px;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+}
+
+.form form textarea {
+    width: 100%;
+    height: 160px;
+    max-width: 480px;
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+}
+
+.form form input[type=submit] {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--btn-color);
+    width: 165px;
+    height: 44px;
+    margin-top: 20px;    
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 0;
+}
+
+.form form input[type=submit]:hover {
+    background-color: var(--btn-hover);
+    transform: scale(1.1);
+}
+
+.map-wraper{
+    float: left;
+	width: 50%;
+	padding:0 10px;
+	color: var(--white);
+}
+
+.map-wraper h2{
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.map{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    border: 5px solid var(--gray);
+}
+
+.map-wraper-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.map-wraper-3{
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+}
+
+/* Media Queries */
 
 @media screen and (max-width: 950px) {
     nav.desktop-menu {
@@ -357,7 +473,6 @@ section.secao-1 .container{
     }
 }
 
-/* Media Queries */
 @media screen and (max-width: 768px) {
 
     header {
@@ -415,7 +530,24 @@ section.secao-1 .container{
         display: none;
     }
 
-    .secao-2{
+    .secao-2 {
         padding: 40px 2%;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .parte-1 {
+        width: 100%;
+        padding: 40px 30px;
+    }
+
+    .parte-2 {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .secao-2 img {
+        top: 60px;
+        margin-top: 20px;
     }
 }
