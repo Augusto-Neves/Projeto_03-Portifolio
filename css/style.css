@@ -356,7 +356,7 @@ section.secao-4 {
     float: left;
     width: 50%;
     color: var(--white);
-    padding-left: 15px;    
+    padding-left: 15px;
 }
 
 .form h2 {
@@ -369,15 +369,15 @@ section.secao-4 {
     font-weight: 300;
     max-width: 400px;
     margin-top: 30px;
+    padding-right: 15px;
 }
 
 .form h3 {
-    max-width: 480px;
-    text-align: right;
     font-size: 14px;
-    
+
 }
-.form form{
+
+.form form {
     margin-top: 15px;
 }
 
@@ -412,7 +412,7 @@ input[type=email] {
     background-color: var(--btn-color);
     width: 165px;
     height: 44px;
-    margin-top: 20px;    
+    margin-top: 20px;
     border-radius: 30px;
     cursor: pointer;
     transition: 0.5s;
@@ -424,19 +424,19 @@ input[type=email] {
     transform: scale(1.1);
 }
 
-.map-wraper{
+.map-wraper {
     float: left;
-	width: 50%;
-	padding:0 10px;
-	color: var(--white);
+    width: 50%;
+    padding: 0 15px;
+    color: var(--white);
 }
 
-.map-wraper h2{
+.map-wraper h2 {
     font-size: 26px;
     font-weight: 300;
 }
 
-.map{
+.map {
     position: absolute;
     left: 0;
     top: 0;
@@ -446,7 +446,7 @@ input[type=email] {
     border: 5px solid var(--gray);
 }
 
-.map-wraper-2{
+.map-wraper-2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -454,10 +454,11 @@ input[type=email] {
     padding-top: 100%;
 }
 
-.map-wraper-3{
+.map-wraper-3 {
     width: 100%;
     max-width: 480px;
     position: relative;
+    margin-top: 10px;
 }
 
 /* Media Queries */
@@ -470,6 +471,44 @@ input[type=email] {
     nav.mobile-menu {
         display: block;
         float: right;
+    }
+
+    section.secao-4 .container {
+        text-align: center;
+    }
+
+    .form {
+        float: none;
+        width: 100%;
+        padding-right: 15px;
+    }
+
+    .form p {
+        display: inline-block;
+    }
+
+    .form h3 {
+        text-align: center;
+        display: block;
+    }
+
+    .map-wraper {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+        padding: 0 4%;
+    }
+
+    .map-wraper-2,
+    .map-wraper-3 {
+        display: inline-block;
+    }   
+
+    .map-wraper-3 {
+        width: 100%;
+        padding-top:100%;
+        max-width: none;
+        position: relative;
     }
 }
 
