@@ -19,6 +19,7 @@
 
 html,
 body {
+    width: 100%;
     height: 100%;
 }
 
@@ -36,9 +37,10 @@ header {
     height: 90vh;
     max-height: 700px;
     padding: 40px 2%;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     background: linear-gradient(to right, #000000a9, #000000bb), url(../img/bg.png);
+    background-repeat: round;
 }
 
 header .logo {
@@ -285,10 +287,15 @@ section.secao-1 .container {
     padding-left: 30px;
 }
 
+
 .autor {
-    float: left;
+    display: flex;
     width: 100%;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
 }
+
 
 .wrapper-autor {
     float: left;
@@ -312,10 +319,11 @@ section.secao-1 .container {
     float: left;
     width: 40px;
     height: 40px;
-    position: relative;
-    top: -4px;
+
     border-radius: 20px;
     background-color: var(--gray);
+    background-image: url(../img/gitHub.png);
+    background-size: 100% 100%;
 }
 
 .texto-autor {
@@ -461,6 +469,24 @@ input[type=email] {
     margin-top: 10px;
 }
 
+footer {
+    color: var(--white);
+    padding: 40px 30px;
+    background: var(--purple-light);
+}
+
+footer p {
+    font-size: 16px;
+}
+
+footer p:nth-of-type(1) {
+    float: left;
+}
+
+footer p:nth-of-type(2) {
+    float: right;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 950px) {
@@ -502,11 +528,11 @@ input[type=email] {
     .map-wraper-2,
     .map-wraper-3 {
         display: inline-block;
-    }   
+    }
 
     .map-wraper-3 {
         width: 100%;
-        padding-top:100%;
+        padding-top: 100%;
         max-width: none;
         position: relative;
     }
@@ -572,9 +598,11 @@ input[type=email] {
     .secao-2 {
         padding: 40px 2%;
     }
+
 }
 
 @media screen and (max-width:580px) {
+
     .parte-1 {
         width: 100%;
         padding: 40px 30px;
@@ -582,11 +610,24 @@ input[type=email] {
 
     .parte-2 {
         width: 100%;
-        padding: 40px 0;
+        padding: 40px 10px;
     }
 
     .secao-2 img {
         top: 60px;
         margin-top: 20px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer p:nth-of-type(1) {
+        float: none;
+    }
+
+    footer p:nth-of-type(2) {
+        float: none;
+        margin-top: 1rem;
     }
 }
